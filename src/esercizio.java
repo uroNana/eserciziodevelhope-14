@@ -11,7 +11,7 @@ public class esercizio {
         public static void main(String[] args) {
             LocalDate today = LocalDate.now();
             LocalDate endOfMonth = LocalDate.of(2023, Month.JUNE, 30);
-            Year thisYear = Year.of(2023);
+            Year thisYear = Year.of(today.getYear());
 
 
             System.out.println("Days left till the end of the month: " + calculatorDayLeftMonth(today, endOfMonth));
